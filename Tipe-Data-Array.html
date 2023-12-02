@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   /*
+   
+   OPERASI ARRAY
+
+   array.push(value)                        Menambah data ke array
+   array.length                             Untuk mendapatkan panjang array
+   array[index]                             Mendapat data di posisi index
+   array[index]=value                       mengubah data di posisi index
+   delete array[index]                      Menghapus data di posisi index, namun index tidak bergeser
+   
+   */
+
+
+     let arrayKosong = [];
+
+     let arayNama = ["Yayan", "Rif\'an", "Awaludin"];
+
+     const names = [];
+     names.push("Yayan");
+     names.push("cahyo", "devina");
+     names.push("eko", "budi");
+
+     console.table(names);
+    console.info(names[0]);
+    console.info(names[1]);
+    console.info(names[2]);
+    
+    names[1] = "apriliyani";
+
+    console.table(names);
+    
+    delete names[3];
+    console.table(names);
+    
+    names[3] = "Kembali lagi";
+    console.table(names);
+    
+    names.push(["yayan", "rif\'an", "awaludin"]); //memasukan array ke array
+    console.table(names);
+  </script>  
+</body>
+</html>

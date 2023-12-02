@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const nilai = 80;
+        let ucapan;
+        //if statment
+        if (nilai >= 79) {
+            ucapan = "Selamat anda lulus";
+        }else{
+            ucapan = "silakan coba lagi";
+        }
+
+        document.writeln(`<p>${ucapan}</p>`);
+
+        //ternary operator
+        ucapan = nilai >= 90 ? "Selamat anda lulus" : "Silakan coba lagi";
+        document.writeln(`<p>${ucapan}<p/>`);
+    </script>
+</body>
+</html>

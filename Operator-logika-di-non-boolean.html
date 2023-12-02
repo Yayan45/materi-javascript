@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* 
+        
+        Operator logika OR(||) membaca dari kiri ke kanan.
+        Operator ini akan mengambil nilai pertama yang truthy.
+        jika tidak ada satupun yang bernilai truthy, maka yang terakhir yang di ambil
+        
+        */
+
+        console.info("Hello"  || "");
+        console.info(""  || []);
+        console.info("0"  || "NOL");
+        console.info(0  || "NOL");
+        console.info(null  || "NULL");
+        console.info(undefined  || "UNDEFINED");
+        console.info(0  || "false");
+
+        //contoh cara penggunaan 
+        const person ={
+
+        firstName : "",
+        lastName : "Rif\'an"
+
+        };
+        const name = person.firstName  || person.lastName;
+        document.writeln(name);
+
+
+
+
+
+
+         /* 
+        
+        Operator logika AND(&&) membaca dari kiri ke kanan.
+        Operator ini akan mengambil nilai pertama yang falsy.
+        jika tidak ada satupun yang bernilai falsy, maka yang terakhir yang di ambil
+        
+        */
+        console.info("Hello"  && "");
+        console.info(""  && []);
+        console.info("0"  && "NOL");
+        console.info(0  && "NOL");
+        console.info(null  && "NULL");
+        console.info(undefined  && "UNDEFINED");
+        console.info(0  && "false");
+
+
+    </script>
+
+</body>
+</html>

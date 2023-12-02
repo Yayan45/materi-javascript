@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //berguna jika suatu variable kosong/null/undefined kita bisa ganti dengan nilai lain.
+
+
+    let siswa;
+
+    let data = siswa;
+    if(data === undefined || data === null){
+        data = "nilai default";
+    }
+    document.writeln(`<p>${data}</p>`);
+
+
+
+    //versi simpel nya
+    data = siswa ?? "Nilai default";
+    document.writeln(`<p>${data}</p>`);
+
+
+
+  </script>   
+</body>
+</html>

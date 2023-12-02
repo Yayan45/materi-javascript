@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+    const person = {};
+
+    //ubah atau menambah
+    person["nama"] = "Yayan Rif\'an Awaludin";
+    person["alamat"] = "indonesia";
+    person["umur"] =  30;
+
+    console.table(person);
+    
+    delete person["umur"];
+    console.table(person);
+    
+
+    //shortcut nya
+    const orang ={
+       "nama lengkap"  : "Devina Apriliyani",
+        alamat         : "Indonesia",
+        umur           : 5
+    };
+    
+    //kode : mengakses property object
+    console.info(`Nama : ${orang["nama lengkap"]}`)
+    console.info(`Alamat : ${orang.alamat}`)
+    console.info(`Umur : ${orang.umur}`)
+    console.table(orang);
+    </script>
+</body>
+</html>
